@@ -8,7 +8,7 @@ books.each do |book|
 
     item = book.at_css('div.text-detail a')
     product['title'] = item.text
-    product['url'] = item['href'] unless item.nil?
+    product['url'] = "https://www.bookstore.ca#{item['href']}" unless item.nil?
 
     product['_collection'] = "book_listings"
 
