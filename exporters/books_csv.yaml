@@ -1,0 +1,15 @@
+exporter_name: books_csv
+exporter_type: csv
+collection: books
+fields:
+  - header: "gid"
+    path: "_gid"
+  - header: "created_at"
+    path: "_created_at"
+  - header: "title"
+    path: "title"
+  - header: "price"
+    path: "price"
+  - header: "author"
+    path: "author"
+
