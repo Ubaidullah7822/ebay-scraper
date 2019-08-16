@@ -23,7 +23,7 @@ exporters:
     disabled: false
   - file: ./exporters/products_csv.yaml
     disabled: false
-    - file: ./exporters/books_last10_json.yaml
+  - file: ./exporters/books_last10_json.yaml
     disabled: false
   - file: ./exporters/books_json.yaml
     disabled: false
