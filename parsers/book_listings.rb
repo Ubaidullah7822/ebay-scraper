@@ -1,5 +1,5 @@
 # initialize nokogiri
-nokogiri = Nokogiri.HTML(content)
+result = Nokogiri.HTML(content)
 
 books = result.xpath("//div[@class='item-info']")
 
