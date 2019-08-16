@@ -6,9 +6,9 @@ books = result.xpath("//div[@class='item-info']")
 books.each do |book|
     product = {}
 
-    product['title'] = book.xpath("//div//h2//a[@class='action-link']").first.text
-    detail_page = book.xpath("//div//h2//a[@class='action-link']").first
-    product['url'] = detail_page['href'] unless detail_page.nil?
+    item = book.at_css('div.text-detail a')
+    product['title'] = item.text
+    product['url'] = item['href'] unless item.nil?
 
     product['_collection'] = "book_listings"
 
