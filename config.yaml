@@ -1,12 +1,20 @@
 seeder:
   file: ./seeder/seeder.rb
   disabled: false
+  file: ./seeder/book_seeder.rb
+  disabled: false
 parsers:
   - page_type: listings
     file: ./parsers/listings.rb
     disabled: false
   - page_type: details
     file: ./parsers/details.rb
+    disabled: false
+  - page_type: book_listings
+    file: ./parsers/book_listings.rb
+    disabled: false
+  - page_type: book_detail
+    file: ./parsers/book_detail.rb
     disabled: false
 exporters:
   - file: ./exporters/products_last10_json.yaml
